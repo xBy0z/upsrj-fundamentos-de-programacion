@@ -1,14 +1,26 @@
 #include <stdio.h>
 
+float area(float side)
+{
+    float a = side * side;
+    return a;
+}
+
+
+
 int main()
 {
-    int x = 100;
-    char letra_a = 'a';
-    float y = 3.14;
-    int z = 50;
-    int suma = x + y + z;
+    int side = 0;
 
-    printf("x vale:  %i, letra_a: %c, y vale: %f, suma: %i\n", x, letra_a, y, suma);
+   printf("Enter the side length: ");
+   scanf("%i", &side);
+
+
+    int a = area(side);
+
+    printf("square area: %i\n", a);
+    
+    
     return 0;
 
 }
