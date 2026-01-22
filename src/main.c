@@ -1,26 +1,28 @@
 #include <stdio.h>
 
-float area(float side)
-{
-    float a = side * side;
-    return a;
+ 
+int is_even(int numero) {
+    
+    if (numero % 2 == 0) {
+        return 1; 
+    } else {
+        return 0; 
+    }
 }
 
+int main() {
+    int numero_usuario;
 
+        
+    printf("Ingrese un número: ");
+    scanf("%d", &numero_usuario);
 
-int main()
-{
-    int side = 0;
-
-   printf("Enter the side length: ");
-   scanf("%i", &side);
-
-
-    int a = area(side);
-
-    printf("square area: %i\n", a);
     
-    
+    if (is_even(numero_usuario) == 1) {
+        printf("El número %d es par \n", numero_usuario);
+    } else {
+        printf("El número %d es impar \n", numero_usuario);
+    }
+
     return 0;
-
 }
